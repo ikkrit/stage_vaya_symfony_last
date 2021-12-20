@@ -1,0 +1,382 @@
+/*  HOME    */
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    z-index: 100;
+}
+
+header .logo-vaya-header {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    font-size: 1.2rem;
+    padding: 6px 15px;
+    color: #fff; 
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    background: #fff;
+    color: var(--police-bg-color);
+}
+
+.section-img {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.section-img::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 1000;
+}
+
+.section-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.section-img img#lune {
+    mix-blend-mode: screen;
+}
+
+.section-img img#foret {
+    z-index: 10;
+}
+
+#nuages {
+    position: absolute;
+    right: -350px;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 0;
+}
+
+#btn_section_img {
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(100px);
+}
+
+#btn_section_img:hover {
+    background: #fff;
+    color: var(--police-bg-color);
+    padding: 8px 50px;
+}
+
+
+
+@media (max-width: 1000px) {
+    header {
+        padding: 20px 50px;
+    }
+    header .nav-list-home li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+    .logo-vaya-header {
+        margin-bottom: 15px;
+    }
+    header .nav-list-home li {
+        font-size: 1rem;
+    }
+}
+
+/*  GALERY  HOME    */
+
+.section-gallery {
+    position: relative;
+    padding: 100px 100px 50px 100px;
+    color: #fff;
+    background: var(--back-bg-color);
+    text-align: center;
+}
+
+.gallery-title {
+    position: relative;
+    font-weight: normal;
+    font-size: 2rem;
+    margin: 40px 0;
+}
+
+.gallery-title::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: var(--police-bg-color);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+}
+
+.top-content {
+    display: flex;
+    width: 90%;
+    margin: 0 auto 20px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-content label {
+    display: inline-block;
+    height: 100%;
+    margin: 0 20px;
+    line-height: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 6px 15px;
+    color: #fff; 
+    border-radius: 20px;
+}
+
+.top-content label:hover {
+    background: #fff;
+    color: var(--police-bg-color);
+}
+
+.img-gallery {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.pic {
+    position: relative;
+    height: 230px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.pic::before {
+    width: 100%;
+    content: '\002B Portefolio \002B';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: -100px;
+    opacity: 0;
+    transition: 0.3s;
+    transition-delay: 0.2s;
+    z-index: 1;
+}
+
+.pic::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(43, 16, 58, 0.8);
+    transition: 0.6s;
+}
+
+.pic:hover::after {
+    height: 100%;
+}
+
+.pic:hover::before {
+    margin-top: 0;
+    opacity: 1;
+}
+
+.pic img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+#check1:checked ~ .gallery-container .img-gallery .pic {
+    position: relative;
+    transform: scale(1);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#check2:checked ~ .gallery-container .img-gallery .jeux {
+    position: relative;
+    transform: scale(1);
+    opacity: 1;
+}
+
+#check2:checked ~ .gallery-container .img-gallery .enfants,
+#check2:checked ~ .gallery-container .img-gallery .projets {
+    position: absolute;
+    transform: scale(0);
+    opacity: 0;
+    transition: 0s;
+}
+
+#check3:checked ~ .gallery-container .img-gallery .enfants {
+    position: relative;
+    transform: scale(1);
+    opacity: 1;
+}
+
+#check3:checked ~ .gallery-container .img-gallery .jeux,
+#check3:checked ~ .gallery-container .img-gallery .projets {
+    position: absolute;
+    transform: scale(0);
+    opacity: 0;
+    transition: 0s;
+}
+
+#check4:checked ~ .gallery-container .img-gallery .projets {
+    position: relative;
+    transform: scale(1);
+    opacity: 1;
+}
+
+#check4:checked ~ .gallery-container .img-gallery .jeux,
+#check4:checked ~ .gallery-container .img-gallery .enfants {
+    position: absolute;
+    transform: scale(0);
+    opacity: 0;
+    transition: 0s;
+}
+
+.gallery-title span:hover {
+    background: #fff;
+    padding: 0 20px;
+    color: var(--police-bg-color);
+    border-radius: 20px;
+}
+
+/*  PRESENTATION    */
+
+
+
+.section-presentation {
+    position: relative;
+    width: 100%;
+    color: #fff;
+    background: var(--back-bg-color);
+    text-align: center;
+}
+
+.section-presentation::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 1000;
+}
+
+.presentation-paralax {
+    background: center / cover no-repeat url('../../public/img/gallery_img/gallery2.jpg');
+    background-attachment: fixed;
+    width: 100%;
+    height: 30vh;
+}
+
+.presentation-paralax2 {
+    background: center / cover no-repeat url('../../public/img/gallery_img/gallery2.jpg');
+    background-attachment: fixed;
+    width: 100%;
+    height: 30vh;
+}
+
+.presentation-top {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    padding: 16px;
+}
+
+.presentation-top::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 1000;
+}
+
+.presentation-mid {
+    width: 100%;
+    height: 20vh;
+}
+
+.plus {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 180px;
+    margin-top: 35px;
+    padding: 6px 10px;
+    color: var(--police-bg-color);
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.plus:hover {
+    background: var(--police-bg-color);
+    color: #fff;
+}
+
+
+

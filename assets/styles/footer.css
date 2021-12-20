@@ -1,0 +1,58 @@
+/*  FOOTER  */
+
+
+footer {
+    position: relative;
+    padding: 60px;
+    color: #fff;
+    background: var(--back-bg-color);
+    text-align: center;
+}
+
+#social-img {
+    width: 120px;
+}
+
+footer .social {
+    padding-bottom: 20px;
+}
+
+footer .social a {
+    font-size: 2rem;
+    margin: 0 32px;
+}
+
+footer .footer-list {
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+footer .footer-list li {
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+footer .copyright {
+    font-size: 1.2rem;
+    padding: 20px;
+    color: var(--police-bg-color);
+}
+
+.vayounette-mail {
+    position: relative;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #fff;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
+.vayounette-mail:hover {
+    background: #fff;
+    color: var(--police-bg-color);
+    transition: 0.7s;
+}
+
+
+
+

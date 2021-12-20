@@ -1,0 +1,75 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Portefolio{% endblock %}
+{% block body %}
+<header class="navbar-global">
+    <h2><a href="#">Vayounette</a></h2>
+    <nav class="nav-global">
+        <li><a href="{{ path('app_home') }}">Accueil</a></li>
+        <li><a href="{{ path('app_about') }}">Vayounette</a></li>
+        <li><a href="#">Market</a></li>
+        <li><a href="#">Contact</a></li>
+    </nav> 
+</header>
+
+<section class="section-galery">
+    <form>
+        <select>
+            <option>4-6 ans </option>
+            <option>4-6 ans </option>
+            <option>4-6 ans </option>
+            <option>4-6 ans </option>
+        </select>
+    </form>
+   <div class="galery-contain">
+    <div class="grid">
+        <div class="grid-sizer"></div>
+        <div class="grid-item">
+            <img src="{{ asset('img/gallery_img/gallery1.jpg') }}" alt="">
+        </div>
+        <div class="grid-item">
+            <img src="{{ asset('img/gallery_img/gallery2.jpg') }}" alt="">
+        </div>
+        <div class="grid-item">
+            <img src="{{ asset('img/gallery_img/gallery3.jpg') }}" alt="">
+        </div>
+        <div class="grid-item">
+            <img src="{{ asset('img/gallery_img/gallery4.jpg') }}" alt="">
+        </div>
+        <div class="grid-item">
+            <img src="{{ asset('img/gallery_img/gallery5.jpg') }}" alt="">
+        </div>
+        <div class="grid-item">
+            <img src="{{ asset('img/gallery_img/gallery6.jpg') }}" alt="">
+        </div>
+        <div class="grid-item">
+            <img src="{{ asset('img/gallery_img/gallery7.jpg') }}" alt="">
+        </div>
+        <div class="grid-item">
+            <img src="{{ asset('img/gallery_img/gallery8.jpg') }}" alt="">
+        </div>
+        <div class="grid-item">
+            <img src="{{ asset('img/gallery_img/gallery9.jpg') }}" alt="">
+        </div>
+      </div>
+    </div>
+</section>
+
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script>
+    var grid = document.querySelector('.grid');
+
+    var msnry = new Masonry( grid, {
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true,
+    gutter: 10
+    });
+
+    imagesLoaded( grid ).on( 'progress', function() {
+     msnry.layout();
+    });
+</script>
+{% endblock %}
+
