@@ -1,14 +1,14 @@
 /*  PORTEFOLIO  */
 
 
-.section-galery {
+.section-portefolio {
     position: relative;
     width: 100%;
     /*background: center / cover no-repeat url('../../public/img/home_img/etoiles.png');*/
     background: var(--back-bg-color);
 }
 
-.section-galery::before {
+.section-portefolio::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -18,7 +18,38 @@
     z-index: 1000;
 }
 
-.galery-contain {
+.form-portefolio {
+    position: fixed;
+    z-index: 10;
+}
+
+.portefolio-title-contain {
+    display: flex;
+    justify-content: center;
+}
+
+.portefolio-title {
+    position: relative;
+    font-weight: normal;
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 40px 0;
+}
+
+.portefolio-title::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: var(--police-bg-color);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+}
+
+.portefolio-contain {
+    max-width: 1200px;
     width: 90%;
     display: block;
     margin: auto;

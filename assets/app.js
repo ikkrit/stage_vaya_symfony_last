@@ -11,6 +11,7 @@ import './styles/home.css';
 import './styles/footer.css';
 import './styles/portefolio.css';
 import './styles/about.css';
+import './styles/contact.css';
 
 // start the Stimulus application
 import './bootstrap';

@@ -3,6 +3,7 @@
 :root {
     --police-bg-color: #6758A6;
     --back-bg-color: #1c0522;
+    --button-hover-color: rgb(106, 90, 168, 0.6);
 }
 
 * {

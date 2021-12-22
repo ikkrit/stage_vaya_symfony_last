@@ -340,6 +340,7 @@ header ul li a.active {
 
 .presentation-top {
     position: relative;
+    margin-top: 30px;
     width: 100%;
     height: 20vh;
     padding: 16px;
@@ -348,7 +349,7 @@ header ul li a.active {
 .presentation-top::before {
     content: '';
     position: absolute;
-    top: -100px;
+    top: -130px;
     left: 0;
     width: 100%;
     height: 100px;

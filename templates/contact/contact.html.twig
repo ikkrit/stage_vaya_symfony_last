@@ -1,0 +1,77 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block body %}
+<header class="navbar-global">
+    <h2><a href="#">Vayounette</a></h2>
+    <nav class="nav-global">
+        <li><a href="{{ path('app_home') }}">Accueil</a></li>
+        <li><a href="{{ path('app_about') }}">Vayounette</a></li>
+        <li><a href="{{ path('app_portefolio') }}">Portefolio</a></li>
+        <li><a href="#">Market</a></li>
+        <li><a href="{{ path('contact_add') }}" class="active">Contact</a></li>
+    </nav> 
+</header>
+
+<section class="section-contact">
+    <div class="section-contact-container">
+    <div class="contact-text">
+        <h2 class="contact-title gallery-title">Un projet ?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam nesciunt cumque animi quasi repudiandae quisquam harum voluptatibus quod, alias non nisi maxime, beatae voluptatum nulla architecto iste debitis inventore explicabo?</p>
+    </div>
+    <div class="contact-container">
+        <div class="contact-box">
+            <div class="contact-left">
+                <h2>Social</h2>
+                <div class="contact-left-img">
+                    <div class="contact-left-box">
+                        <img id="contact-img"src="{{ asset('img/logo/hiboulinkdin.png') }}">
+                        <a href="#">Linkdin</a>
+                    </div>
+                    <div class="contact-left-box">
+                        <img id="contact-img"src="{{ asset('img/logo/pandafacebook.png') }}">
+                        <a href="#">Facebook</a>
+                    </div>
+                    <div class="contact-left-box">
+                        <img id="contact-img"src="{{ asset('img/logo/pipinblog.png') }}">
+                        <a href="#">Blog</a>
+                    </div>
+                    <div class="contact-left-box">
+                        <img id="contact-img"src="{{ asset('img/logo/renardinsta.png') }}">
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+                <p class="contact-mail"><a href="#">vayounette@test.fr</a></p>
+            </div>
+            <div class="contact-right">
+                <h2>Contact</h2>
+                {{ form_start(form,{'attr': {'novalidate': 'novalidate'}}) }}
+
+                {{ form_label(form.name, 'Votre nom', {'label_attr': {'class': 'group-label'}}) }}
+                {{ form_widget(form.name, {'attr': {'class': 'form-widget'}}) }}
+
+                {{ form_label(form.mail, 'Votre email', {'label_attr': {'class': 'group-label'}}) }}
+                {{ form_widget(form.mail, {'attr': {'class': 'form-widget'}}) }}
+
+                {{ form_label(form.subject, 'Votre demande', {'label_attr': {'class': 'group-label'}}) }}
+                {{ form_widget(form.subject, {'attr': {'class': 'form-widget'}}) }}
+
+                {{ form_label(form.text, 'Votre message', {'label_attr': {'class': 'text-label'}}) }}
+                {{ form_widget(form.text, {'attr': {'class': 'form-field'}}) }}
+
+
+                {{ form_rest(form) }}
+
+                <div class="form-button">
+                    <button class="contact-button" type="submit">Enregistrer</button>
+                </div>
+
+                {{ form_end(form) }}
+            </div> 
+        </div>  
+    </div>
+    </div> 
+</section>
+<div class="footer-contact"></div>
+{% endblock %}

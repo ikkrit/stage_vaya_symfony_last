@@ -6,6 +6,7 @@
     <h2><a href="#">Vayounette</a></h2>
     <nav class="nav-global">
         <li><a href="{{ path('app_home') }}">Accueil</a></li>
+        <li><a href="{{ path('app_about') }}" class="active">vayounette</a></li>
         <li><a href="{{ path('app_portefolio') }}">Portefolio</a></li>
         <li><a href="#">Market</a></li>
         <li><a href="#">Contact</a></li>
@@ -31,4 +32,5 @@
     </div>
     <div class="about-paralax3"></div>
 </section>
+{% include "footer/footer.html.twig" %}
 {% endblock %}

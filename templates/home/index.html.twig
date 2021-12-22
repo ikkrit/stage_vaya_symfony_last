@@ -6,11 +6,11 @@
     <header>
         <a href="#" class="logo-vaya-header" alt="logo Vayounette">Vayounette</a>
         <ul class="nav-list-home">
-            <!--<li><a href="#" class="active">Accueil</a></li>-->
+            <li><a href="{{ path('app_home') }}" class="active">Accueil</a></li>
             <li><a href="{{ path('app_about') }}">vayounette</a></li>
             <li><a href="{{ path('app_portefolio') }}">Portefolio</a></li>
             <li><a href="#">market</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="{{ path('contact_add') }}">contact</a></li>
         </ul>
     </header>
 
@@ -106,4 +106,5 @@
             header.style.top = value * 0.5 + 'px';
         })
     </script>
+{% include "footer/footer.html.twig" %}
 {% endblock %}

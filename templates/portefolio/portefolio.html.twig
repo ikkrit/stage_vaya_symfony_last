@@ -7,13 +7,14 @@
     <nav class="nav-global">
         <li><a href="{{ path('app_home') }}">Accueil</a></li>
         <li><a href="{{ path('app_about') }}">Vayounette</a></li>
+        <li><a href="{{ path('app_portefolio') }}" class="active">Portefolio</a></li>
         <li><a href="#">Market</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="{{ path('contact_add') }}">Contact</a></li>
     </nav> 
 </header>
 
-<section class="section-galery">
-    <form>
+<section class="section-portefolio">
+    <form class="form-portefolio">
         <select>
             <option>4-6 ans </option>
             <option>4-6 ans </option>
@@ -21,37 +22,40 @@
             <option>4-6 ans </option>
         </select>
     </form>
-   <div class="galery-contain">
-    <div class="grid">
-        <div class="grid-sizer"></div>
-        <div class="grid-item">
-            <img src="{{ asset('img/gallery_img/gallery1.jpg') }}" alt="">
+    <div class="portefolio-title-contain">
+        <h2 class="portefolio-title">Portefolio</h2>
+    </div>
+    <div class="portefolio-contain">
+        <div class="grid">
+            <div class="grid-sizer"></div>
+            <div class="grid-item">
+                <img src="{{ asset('img/gallery_img/gallery1.jpg') }}" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('img/gallery_img/gallery2.jpg') }}" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('img/gallery_img/gallery3.jpg') }}" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('img/gallery_img/gallery4.jpg') }}" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('img/gallery_img/gallery5.jpg') }}" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('img/gallery_img/gallery6.jpg') }}" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('img/gallery_img/gallery7.jpg') }}" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('img/gallery_img/gallery8.jpg') }}" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('img/gallery_img/gallery9.jpg') }}" alt="">
+            </div>
         </div>
-        <div class="grid-item">
-            <img src="{{ asset('img/gallery_img/gallery2.jpg') }}" alt="">
-        </div>
-        <div class="grid-item">
-            <img src="{{ asset('img/gallery_img/gallery3.jpg') }}" alt="">
-        </div>
-        <div class="grid-item">
-            <img src="{{ asset('img/gallery_img/gallery4.jpg') }}" alt="">
-        </div>
-        <div class="grid-item">
-            <img src="{{ asset('img/gallery_img/gallery5.jpg') }}" alt="">
-        </div>
-        <div class="grid-item">
-            <img src="{{ asset('img/gallery_img/gallery6.jpg') }}" alt="">
-        </div>
-        <div class="grid-item">
-            <img src="{{ asset('img/gallery_img/gallery7.jpg') }}" alt="">
-        </div>
-        <div class="grid-item">
-            <img src="{{ asset('img/gallery_img/gallery8.jpg') }}" alt="">
-        </div>
-        <div class="grid-item">
-            <img src="{{ asset('img/gallery_img/gallery9.jpg') }}" alt="">
-        </div>
-      </div>
     </div>
 </section>
 
@@ -71,5 +75,7 @@
      msnry.layout();
     });
 </script>
+{% include "footer/footer.html.twig" %}
 {% endblock %}
+
 
