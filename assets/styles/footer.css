@@ -3,14 +3,14 @@
 
 footer {
     position: relative;
-    padding: 60px;
+    padding: 20px 60px 10px 60px;
     color: #fff;
     background: var(--back-bg-color);
     text-align: center;
 }
 
 #social-img {
-    width: 120px;
+    width: 100px;
 }
 
 footer .social {
@@ -29,7 +29,7 @@ footer .footer-list {
 
 footer .footer-list li {
     display: inline-block;
-    padding: 0 1rem;
+    padding: 0 16px;
 }
 
 footer .copyright {
@@ -43,8 +43,8 @@ footer .copyright {
     font-size: 3rem;
     font-weight: 400;
     color: #fff;
-    padding: 0 10px;
-    border-radius: 20px;
+    padding: 2px 10px;
+    border-radius: 30px;
 }
 
 .vayounette-mail:hover {
