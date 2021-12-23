@@ -21,21 +21,21 @@
 }
 
 .about-paralax {
-    background: center / cover no-repeat url('../../public/img/home_img/foret.png');
+    background: center / cover no-repeat url('../../public/img/home_img/wall_about.jpg');
     background-attachment: fixed;
     width: 100%;
     height: 30vh;
 }
 
 .about-paralax2 {
-    background: center / cover no-repeat url('../../public/img/home_img/foret.png');
+    background: center / cover no-repeat url('../../public/img/home_img/wall_about.jpg');
     background-attachment: fixed;
     width: 100%;
     height: 30vh;
 }
 
 .about-paralax3 {
-    background: center / cover no-repeat url('../../public/img/home_img/foret.png');
+    background: center / cover no-repeat url('../../public/img/home_img/wall_about.jpg');
     background-attachment: fixed;
     width: 100%;
     height: 30vh;
