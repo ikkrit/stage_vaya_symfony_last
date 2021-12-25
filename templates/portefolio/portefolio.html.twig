@@ -8,22 +8,26 @@
         <li><a href="{{ path('app_home') }}">Accueil</a></li>
         <li><a href="{{ path('app_about') }}">Vayounette</a></li>
         <li><a href="{{ path('app_portefolio') }}" class="active">Portefolio</a></li>
-        <li><a href="#">Market</a></li>
+        <li><a href="{{ path('app_market') }}">Market</a></li>
         <li><a href="{{ path('contact_add') }}">Contact</a></li>
     </nav> 
 </header>
 
 <section class="section-portefolio">
-    <form class="form-portefolio">
-        <select>
-            <option>4-6 ans </option>
-            <option>4-6 ans </option>
-            <option>4-6 ans </option>
-            <option>4-6 ans </option>
-        </select>
-    </form>
     <div class="portefolio-title-contain">
         <h2 class="portefolio-title">Portefolio</h2>
+    </div>
+    <input type="radio" name="Photos" id="check1" checked>
+    <input type="radio" name="Photos" id="check2">
+    <input type="radio" name="Photos" id="check3">
+    <input type="radio" name="Photos" id="check4">
+    <div class="gallery-container">
+        <div class="top-content">
+            <label for="check1">Tous</label>
+            <label for="check2">Jeux</label>
+            <label for="check3">Enfants</label>
+            <label for="check4">Projets</label>
+         </div>
     </div>
     <div class="portefolio-contain">
         <div class="grid">

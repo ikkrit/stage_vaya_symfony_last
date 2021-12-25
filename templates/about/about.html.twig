@@ -8,8 +8,8 @@
         <li><a href="{{ path('app_home') }}">Accueil</a></li>
         <li><a href="{{ path('app_about') }}" class="active">vayounette</a></li>
         <li><a href="{{ path('app_portefolio') }}">Portefolio</a></li>
-        <li><a href="#">Market</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="{{ path('app_market') }}">Market</a></li>
+        <li><a href="{{ path('app_contact') }}">Contact</a></li>
     </nav> 
 </header>
 
@@ -19,11 +19,19 @@
     </div>
     <div class="about-paralax"></div>
     <div class="about-paralax-mid">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A minima error nulla optio provident, aspernatur odio dicta deleniti. Vel dolorem eum facere quos pariatur iste optio vitae. Deserunt, nam nisi.Lorem ipsum, dolor sit amet consectetur adipisicing elit. A minima error nulla optio provident, aspernatur odio dicta deleniti. Vel dolorem eum facere quos pariatur iste optio vitae. Deserunt, nam nisi.</p>
+        <div class="paralax-mid-left">
+            <img id="about_icon" src="{{ asset('img/gallery_img/gallery5.jpg') }}" alt="gallery image">
+        </div>
+        <div class="paralax-mid-right">
+            <h3>Mon parcour</h3>
+            <p>Diplômée de Penninghen, je suis illustratrice indépendante depuis 2002 ; Je conçois sur mesure votre communication illustrée, imprimée ou numérique. Mon savoir-faire, c’est traduire en illustrations simples et didactiques des messages complexes ou délicats. Je peux également animer ces illustrations en motion design pour rendre les discours encore plus parlants. Mes clients sont souvent de grands groupes comme EDF, la SNCF, Axa prévention ou les autoroutes APRR mais je réalise également des illustrations pour la presse et le web. Les animatiques, serious game et e-learning sont très demandés, pour de nombreuses applications RH en communication interne : formation des pilotes chez Air France, jeu chez American Express, Intermarché ou Otis, on peut tout faire avec des illustrations ! Je suis représentée par l’un&l’autre.</p>
+        </div>
     </div>
     <div class="about-paralax2"></div>
     <div class="about-paralax-bottom">
-        <p>Pour créer et réaliser ses illustrations, Vayounette s’inspire essentiellement de sa vie quotidienne entre son atelier de Bretagne, ainsi que de ses voyages qui l’emmènent chaque année plusieurs mois autour du globe.</p>
+        <h3>glandeuse</h3>
+        <p>Personne de sexe féminin qui n'aime pas être en activité, qui rechigne à la tâche.
+            Exemple : Cette glandeuse n'a même pas fait la vaisselle et est restée toute la journée à regarder la télé !</p>
     </div>
     <div class="about-paralax3"></div>
 </section>

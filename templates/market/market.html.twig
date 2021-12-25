@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Market{% endblock %}
+
+{% block body %}
+<header class="navbar-global">
+    <h2><a href="#">Vayounette</a></h2>
+    <nav class="nav-global">
+        <li><a href="{{ path('app_home') }}">Accueil</a></li>
+        <li><a href="{{ path('app_about') }}">Vayounette</a></li>
+        <li><a href="{{ path('app_portefolio') }}">Portefolio</a></li>
+        <li><a href="{{ path('app_market') }}" class="active">Market</a></li>
+        <li><a href="{{ path('contact_add') }}">Contact</a></li>
+    </nav> 
+</header>
+
+<section class="section-market">
+
+    <div class="market-title-contain">
+        <h2 class="market-title">Market</h2>
+    </div>
+</section>
+
+{% include "footer/footer.html.twig" %}
+{% endblock %}

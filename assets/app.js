@@ -12,6 +12,7 @@ import './styles/footer.css';
 import './styles/portefolio.css';
 import './styles/about.css';
 import './styles/contact.css';
+import './styles/market.css';
 
 // start the Stimulus application
 import './bootstrap';

@@ -9,7 +9,7 @@
             <li><a href="{{ path('app_home') }}" class="active">Accueil</a></li>
             <li><a href="{{ path('app_about') }}">vayounette</a></li>
             <li><a href="{{ path('app_portefolio') }}">Portefolio</a></li>
-            <li><a href="#">market</a></li>
+            <li><a href="{{ path('app_market') }}">market</a></li>
             <li><a href="{{ path('contact_add') }}">contact</a></li>
         </ul>
     </header>
@@ -26,41 +26,55 @@
 <!--    GALLERY -->
 
     <section class="section-gallery">
-        <input type="radio" name="Photos" id="check1" checked>
-        <input type="radio" name="Photos" id="check2">
-        <input type="radio" name="Photos" id="check3">
-        <input type="radio" name="Photos" id="check4">
         <div class="gallery-container">
             <h2 class="gallery-title">Mon univers</h2>
-            <div class="top-content">
-                <label for="check1">Tous</label>
-                <label for="check2">Jeux</label>
-                <label for="check3">Enfants</label>
-                <label for="check4">Projets</label>
-            </div>
             <div class="img-gallery">
-                <div class="pic place">
+                <div class="pic">
+                    <div class="pic-link">
+                        <p><a href="{{ path('app_portefolio') }}">Portefolio</a></p>
+                    </div>
                     <img src="{{ asset('img/gallery_img/gallery1.jpg') }}" alt="gallery image">
                 </div>
-                <div class="pic jeux">
+                <div class="pic">
+                    <div class="pic-link">
+                        <p><a href="{{ path('app_portefolio') }}">Portefolio</a></p>
+                    </div>
                     <img src="{{ asset('img/gallery_img/gallery2.jpg') }}" alt="gallery image">
                 </div>
-                <div class="pic enfants">
+                <div class="pic">
+                    <div class="pic-link">
+                        <p><a href="{{ path('app_portefolio') }}">Portefolio</a></p>
+                    </div>
                     <img src="{{ asset('img/gallery_img/gallery3.jpg') }}" alt="gallery image">
                 </div>
-                <div class="pic livres">
+                <div class="pic">
+                    <div class="pic-link">
+                        <p><a href="{{ path('app_portefolio') }}">Portefolio</a></p>
+                    </div>
                     <img src="{{ asset('img/gallery_img/gallery4.jpg') }}" alt="gallery image">
                 </div>
-                <div class="pic jeux">
+                <div class="pic">
+                    <div class="pic-link">
+                        <p><a href="{{ path('app_portefolio') }}">Portefolio</a></p>
+                    </div>
                     <img src="{{ asset('img/gallery_img/gallery5.jpg') }}" alt="gallery image">
                 </div>
-                <div class="pic enfants">
+                <div class="pic">
+                    <div class="pic-link">
+                        <p><a href="{{ path('app_portefolio') }}">Portefolio</a></p>
+                    </div>
                     <img src="{{ asset('img/gallery_img/gallery6.jpg') }}" alt="gallery image">
                 </div>
-                <div class="pic projets">
+                <div class="pic">
+                    <div class="pic-link">
+                        <p><a href="{{ path('app_portefolio') }}">Portefolio</a></p>
+                    </div>
                     <img src="{{ asset('img/gallery_img/gallery7.jpg') }}" alt="gallery image">
                 </div>
-                <div class="pic projets">
+                <div class="pic">
+                    <div class="pic-link">
+                        <p><a href="{{ path('app_portefolio') }}">Portefolio</a></p>
+                    </div>
                     <img src="{{ asset('img/gallery_img/gallery8.jpg') }}" alt="gallery image">
                 </div>
             </div>

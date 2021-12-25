@@ -136,7 +136,7 @@ header ul li a.active {
 
 .section-gallery {
     position: relative;
-    padding: 100px 100px 50px 100px;
+    padding: 0 100px 50px 100px;
     color: #fff;
     background: var(--back-bg-color);
     text-align: center;
@@ -169,24 +169,6 @@ header ul li a.active {
     justify-content: center;
 }
 
-.top-content label {
-    display: inline-block;
-    height: 100%;
-    margin: 0 20px;
-    line-height: 30px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: 0.5s;
-    padding: 6px 15px;
-    color: #fff; 
-    border-radius: 20px;
-}
-
-.top-content label:hover {
-    background: #fff;
-    color: var(--police-bg-color);
-}
-
 .img-gallery {
     width: 90%;
     margin: auto;
@@ -202,9 +184,8 @@ header ul li a.active {
     transition: 0.5s;
 }
 
-.pic::before {
+.pic .pic-link {
     width: 100%;
-    content: 'Portefolio';
     position: absolute;
     top: 50%;
     left: 50%;
@@ -234,7 +215,7 @@ header ul li a.active {
     height: 100%;
 }
 
-.pic:hover::before {
+.pic:hover .pic-link {
     margin-top: 0;
     opacity: 1;
 }
@@ -246,54 +227,6 @@ header ul li a.active {
     transition: 0.5s;
 }
 
-#check1:checked ~ .gallery-container .img-gallery .pic {
-    position: relative;
-    transform: scale(1);
-    opacity: 1;
-    transition: 0.5s;
-}
-
-#check2:checked ~ .gallery-container .img-gallery .jeux {
-    position: relative;
-    transform: scale(1);
-    opacity: 1;
-}
-
-#check2:checked ~ .gallery-container .img-gallery .enfants,
-#check2:checked ~ .gallery-container .img-gallery .projets {
-    position: absolute;
-    transform: scale(0);
-    opacity: 0;
-    transition: 0s;
-}
-
-#check3:checked ~ .gallery-container .img-gallery .enfants {
-    position: relative;
-    transform: scale(1);
-    opacity: 1;
-}
-
-#check3:checked ~ .gallery-container .img-gallery .jeux,
-#check3:checked ~ .gallery-container .img-gallery .projets {
-    position: absolute;
-    transform: scale(0);
-    opacity: 0;
-    transition: 0s;
-}
-
-#check4:checked ~ .gallery-container .img-gallery .projets {
-    position: relative;
-    transform: scale(1);
-    opacity: 1;
-}
-
-#check4:checked ~ .gallery-container .img-gallery .jeux,
-#check4:checked ~ .gallery-container .img-gallery .enfants {
-    position: absolute;
-    transform: scale(0);
-    opacity: 0;
-    transition: 0s;
-}
 
 .gallery-title span:hover {
     background: #fff;

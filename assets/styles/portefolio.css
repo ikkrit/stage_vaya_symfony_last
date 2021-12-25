@@ -55,6 +55,24 @@
     margin: auto;
 }
 
+.section-portefolio label {
+    display: inline-block;
+    height: 100%;
+    margin: 0 20px;
+    line-height: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 6px 15px;
+    color: #fff; 
+    border-radius: 20px;
+}
+
+.section-portefolio label:hover {
+    background: #fff;
+    color: var(--police-bg-color);
+}
+
 .grid {
     position: relative;
 }

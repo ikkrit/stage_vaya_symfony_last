@@ -51,7 +51,13 @@
 }
 
 #contact-img {
-    width: 15%;
+    width: 70%;
+    margin: auto;
+}
+
+.contact-left-img {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
 }
 
 .contact-right, .contact-left {
@@ -65,11 +71,6 @@
     text-align: center;
     padding-bottom: 10px;
     margin-bottom: 10px;
-}
-
-.contact-left-box a {
-    font-size: 1.3rem;
-    padding-left: 30px;
 }
 
 .contact-mail {
@@ -90,11 +91,7 @@
     transition: 0.7s;
 }
 
-.group-label {
-    font-size: 1.2rem;
-}
-
-.form-widget {
+.nameContact, .mailContact, .subjectContact {
     width: 100%;
     font-size: 1.1rem;
     border: 2px solid rgba(0, 0, 0, 0);
@@ -103,29 +100,25 @@
     transition: 0.3s;
 }
 
-.form-widget:hover {
+.nameContact:hover, .mailContact:hover, .subjectContact:hover {
     background-color: rgb(103, 88, 166, 0.5);
 }
 
-.text-label {
-    font-size: 1.2rem;
-}
-
-.form-field {
+.textContact {
     width: 100%;
     font-size: 1.1rem;
-    padding: 2rem;
+    height: 100px;
     border: 2px solid rgba(0, 0, 0, 0);
     background-color: var(--police-bg-color);
     margin-bottom: 22px;
     transition: 0.3s;
 }
 
-.form-field:hover {
+.textContact:hover {
     background-color: rgb(103, 88, 166, 0.5);
 }
 
-.contact-button {
+.submitButton {
     width: 100%;
     color: #fff;
     font-size: 1.1rem;
@@ -137,7 +130,7 @@
     transition: 0.3s;
 }
 
-.contact-button:hover {
+.submitButton:hover {
     background: rgb(103, 88, 166, 0.5);
     color: var(--police-bg-color);
     transition: 0.7s;
@@ -163,5 +156,10 @@
     .contact-mail {
         margin-top: 30px;
         padding: 0 10px;
+    }
+    .contact-left-img {
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+        margin: auto;
     }
 }
