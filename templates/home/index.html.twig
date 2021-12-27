@@ -4,7 +4,6 @@
 
 {% block body %}
     <header>
-        <a href="#" class="logo-vaya-header" alt="logo Vayounette">Vayounette</a>
         <ul class="nav-list-home">
             <li><a href="{{ path('app_home') }}" class="active">Accueil</a></li>
             <li><a href="{{ path('app_about') }}">vayounette</a></li>
@@ -88,7 +87,9 @@
 
     <section class="section-presentation">
         <h2 class="gallery-title">Qui je suis</h2>
+
         <div class="presentation-paralax"></div>
+
         <div class="presentation-top">
             <h2 class="presentation-title">Vayounette Illustratrice</h2>
             <p>Vayounette est artiste illustratrice et graphiste pour la presse magazine française et internationale, les livres et la publicité. On retrouve ses personnages kawai, stylisés et colorés essentiellement dans des univers etrange et inquietant.</p>
@@ -96,6 +97,7 @@
         <div class="plus">
             <h3 class="plus-button"><a href="{{ path('app_about') }}">Lire la suite</a></h3>
         </div>
+        
         <div class="presentation-mid">
             <div class="client">
                 <div class="inter-presentation"></div>

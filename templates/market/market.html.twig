@@ -3,8 +3,8 @@
 {% block title %}Market{% endblock %}
 
 {% block body %}
-<header class="navbar-global">
-    <h2><a href="#">Vayounette</a></h2>
+<header class="navbar-global nav-market">
+    <h2><a href="#"><img id="vayounette_nav_icon" src="{{ asset('img/logo/vayounette.png') }}" alt="Logo Vayounette"></a></h2>
     <nav class="nav-global">
         <li><a href="{{ path('app_home') }}">Accueil</a></li>
         <li><a href="{{ path('app_about') }}">Vayounette</a></li>
@@ -16,10 +16,155 @@
 
 <section class="section-market">
 
-    <div class="market-title-contain">
-        <h2 class="market-title">Market</h2>
+    <div class="slider">
+        <div class="content-slider">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+    
+            <div class="slide first">
+                <img id="slide-img" src="{{ asset('img/market_img/market1.jpg') }}" alt="">
+            </div>
+            <div class="slide">
+                <img id="slide-img" src="{{ asset('img/market_img/market2.jpg') }}" alt="">
+            </div>
+            <div class="slide">
+                <img id="slide-img" src="{{ asset('img/market_img/market3.jpg') }}" alt="">
+            </div>
+            <div class="slide">
+                <img id="slide-img" src="{{ asset('img/market_img/market4.jpg') }}" alt="">
+            </div>
+            <div class="slide">
+                <img id="slide-img" src="{{ asset('img/market_img/market5.jpg') }}" alt="">
+            </div>
+    
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+            </div>      
+        </div>
+    
+        <div class="navigation-manuel">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+        </div>
     </div>
+
+    <div class="market-title--contain">
+        <h2 class="gallery-title market-title">Market</h2>
+    </div>
+
+    <div class="card-contain">
+        <div class="card card1">
+            <div class="card-content">
+                <h2 class="card-title">Decouvrir</h2>
+                <p class="card-body">Boutique</p>
+                <a href="https://www.amazon.fr/licornes-magiques-Vayounette/dp/2299003932/ref=sr_1_18?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2240PG2FK9PX0&keywords=vayounette&qid=1640629245&s=books&sprefix=vayounette%2Cstripbooks%2C82&sr=1-18" class="card-button"><img id="logo-amazon" src="{{ asset('img/logo/Amazon-logo.png') }}" alt=""></a>
+            </div>
+        </div>
+        <div class="card card2">
+            <div class="card-content">
+                <h2 class="card-title">Decouvrir</h2>
+                <p class="card-body">Boutique</p>
+                <a href="https://www.amazon.fr/licornes-magiques-Vayounette/dp/2299003932/ref=sr_1_18?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2240PG2FK9PX0&keywords=vayounette&qid=1640629245&s=books&sprefix=vayounette%2Cstripbooks%2C82&sr=1-18" class="card-button"><img id="logo-amazon" src="{{ asset('img/logo/Amazon-logo.png') }}" alt=""></a>
+            </div>
+        </div>
+        <div class="card card3">
+            <div class="card-content">
+                <h2 class="card-title">Decouvrir</h2>
+                <p class="card-body">Boutique</p>
+                <a href="https://www.amazon.fr/licornes-magiques-Vayounette/dp/2299003932/ref=sr_1_18?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2240PG2FK9PX0&keywords=vayounette&qid=1640629245&s=books&sprefix=vayounette%2Cstripbooks%2C82&sr=1-18" class="card-button"><img id="logo-amazon" src="{{ asset('img/logo/Amazon-logo.png') }}" alt=""></a>
+            </div>
+        </div>
+        <div class="card card4">
+            <div class="card-content">
+                <h2 class="card-title">Decouvrir</h2>
+                <p class="card-body">Boutique</p>
+                <a href="https://www.amazon.fr/licornes-magiques-Vayounette/dp/2299003932/ref=sr_1_18?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2240PG2FK9PX0&keywords=vayounette&qid=1640629245&s=books&sprefix=vayounette%2Cstripbooks%2C82&sr=1-18" class="card-button"><img id="logo-amazon" src="{{ asset('img/logo/Amazon-logo.png') }}" alt=""></a>
+            </div>
+        </div>
+        <div class="card card5">
+            <div class="card-content">
+                <h2 class="card-title">Decouvrir</h2>
+                <p class="card-body">Boutique</p>
+                <a href="https://www.amazon.fr/licornes-magiques-Vayounette/dp/2299003932/ref=sr_1_18?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2240PG2FK9PX0&keywords=vayounette&qid=1640629245&s=books&sprefix=vayounette%2Cstripbooks%2C82&sr=1-18" class="card-button"><img id="logo-amazon" src="{{ asset('img/logo/Amazon-logo.png') }}" alt=""></a>
+            </div>
+        </div>
+        <div class="card card6">
+            <div class="card-content">
+                <h2 class="card-title">Decouvrir</h2>
+                <p class="card-body">Boutique</p>
+                <a href="https://www.amazon.fr/licornes-magiques-Vayounette/dp/2299003932/ref=sr_1_18?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2240PG2FK9PX0&keywords=vayounette&qid=1640629245&s=books&sprefix=vayounette%2Cstripbooks%2C82&sr=1-18" class="card-button"><img id="logo-amazon" src="{{ asset('img/logo/Amazon-logo.png') }}" alt=""></a>
+            </div>
+        </div>
+        <div class="card card7">
+            <div class="card-content">
+                <h2 class="card-title">Decouvrir</h2>
+                <p class="card-body">Boutique</p>
+                <a href="https://www.amazon.fr/licornes-magiques-Vayounette/dp/2299003932/ref=sr_1_18?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2240PG2FK9PX0&keywords=vayounette&qid=1640629245&s=books&sprefix=vayounette%2Cstripbooks%2C82&sr=1-18" class="card-button"><img id="logo-amazon" src="{{ asset('img/logo/Amazon-logo.png') }}" alt=""></a>
+            </div>
+        </div>
+        <div class="card card8">
+            <div class="card-content">
+                <h2 class="card-title">Decouvrir</h2>
+                <p class="card-body">Boutique</p>
+                <a href="https://www.amazon.fr/licornes-magiques-Vayounette/dp/2299003932/ref=sr_1_18?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2240PG2FK9PX0&keywords=vayounette&qid=1640629245&s=books&sprefix=vayounette%2Cstripbooks%2C82&sr=1-18" class="card-button"><img id="logo-amazon" src="{{ asset('img/logo/Amazon-logo.png') }}" alt=""></a>
+            </div>
+        </div>
+        <div class="card card9">
+            <div class="card-content">
+                <h2 class="card-title">Decouvrir</h2>
+                <p class="card-body">Boutique</p>
+                <a href="https://www.amazon.fr/licornes-magiques-Vayounette/dp/2299003932/ref=sr_1_18?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2240PG2FK9PX0&keywords=vayounette&qid=1640629245&s=books&sprefix=vayounette%2Cstripbooks%2C82&sr=1-18" class="card-button"><img id="logo-amazon" src="{{ asset('img/logo/Amazon-logo.png') }}" alt=""></a>
+            </div>
+        </div>
+        <div class="card card10">
+            <div class="card-content">
+                <h2 class="card-title">Decouvrir</h2>
+                <p class="card-body">Boutique</p>
+                <a href="https://www.amazon.fr/licornes-magiques-Vayounette/dp/2299003932/ref=sr_1_18?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2240PG2FK9PX0&keywords=vayounette&qid=1640629245&s=books&sprefix=vayounette%2Cstripbooks%2C82&sr=1-18" class="card-button"><img id="logo-amazon" src="{{ asset('img/logo/Amazon-logo.png') }}" alt=""></a>
+            </div>
+        </div>
+        <div class="card card11">
+            <div class="card-content">
+                <h2 class="card-title">Decouvrir</h2>
+                <p class="card-body">Boutique</p>
+                <a href="https://www.amazon.fr/licornes-magiques-Vayounette/dp/2299003932/ref=sr_1_18?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2240PG2FK9PX0&keywords=vayounette&qid=1640629245&s=books&sprefix=vayounette%2Cstripbooks%2C82&sr=1-18" class="card-button"><img id="logo-amazon" src="{{ asset('img/logo/Amazon-logo.png') }}" alt=""></a>
+            </div>
+        </div>
+        <div class="card card12">
+            <div class="card-content">
+                <h2 class="card-title">Decouvrir</h2>
+                <p class="card-body">Boutique</p>
+                <a href="https://www.amazon.fr/licornes-magiques-Vayounette/dp/2299003932/ref=sr_1_18?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2240PG2FK9PX0&keywords=vayounette&qid=1640629245&s=books&sprefix=vayounette%2Cstripbooks%2C82&sr=1-18" class="card-button"><img id="logo-amazon" src="{{ asset('img/logo/Amazon-logo.png') }}" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="link-boutique">
+        <h3 class="link-boutique--button"><a href="https://www.amazon.fr/s?k=vayounette+illustration&i=stripbooks&__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1VY73SWXDSK3L&sprefix=vayounette+illustration%2Cstripbooks%2C124&ref=nb_sb_noss">En voir plus</a></h3>
+    </div>
+    
 </section>
 
+<script type="text/javascript">
+    var counter = 1;
+    setInterval(function() {
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4) {
+            counter = 1;
+        }
+    }, 4000);
+</script>
 {% include "footer/footer.html.twig" %}
 {% endblock %}
+
