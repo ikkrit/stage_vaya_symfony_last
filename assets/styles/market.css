@@ -167,6 +167,7 @@
     align-items: center;
     justify-content: center;
     margin: 4rem 0;
+    /*background: url(../../public/img/home_img/foret.png);*/
 }
 
 .card {
@@ -322,11 +323,39 @@
     background-color: var(--button-hover);
 }
 
+
+/*  INTER   */
+
 .link-boutique {
-    width: 85%;
+    width: 100%;
     margin: auto;
     height: 20vh;
     text-align: center;
     color: #fff;
     border: 1px solid var(--police-bg-color);
+    border-width: 0 0 3px 0;
+}
+
+.link-boutique--button {
+    width: 40%;
+    margin: auto;
+    color: #fff;
+    font-size: 2rem;
+    padding: 16px 16px;
+    background-color: var(--police-bg-color);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.market-inter {
+    display: flex;
+    width: 100%;
+    background-color: var(--back-bg-color);
+}
+
+.market-inter-explain {
+    width: 100%;
+    height: 20vh;
+    border: solid var(--police-bg-color);
+    border-width: 3px 0;
 }
